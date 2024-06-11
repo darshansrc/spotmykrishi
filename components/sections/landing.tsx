@@ -64,7 +64,7 @@ export default function Landing() {
               <img
                 src="/placeholder.svg"
                 width={400}
-                height={300}
+                height={400}
                 alt="Product 1"
                 className="rounded-t-lg object-cover"
               />

@@ -1,18 +1,17 @@
-import Landing from "@/components/landing";
+import Image from "next/image";
+import { ModeToggle } from "./mode-toggle";
 import Banner from "@/components/sections/banner";
 import Header from "@/components/sections/header";
 import Hero from "@/components/sections/hero";
-import React from "react";
+import Landing from "@/components/sections/landing";
 
-const Page = () => {
+export default function Home() {
   return (
-    <main>
+    <main className="flex min-h-screen flex-col min-w-full">
       <Banner />
       <Header />
       <Hero />
       <Landing />
     </main>
   );
-};
-
-export default Page;
+}
