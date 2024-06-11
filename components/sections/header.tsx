@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const Header = () => {
   return (
-    <header className="bg-white py-4 px-0 shadow">
+    <header className="bg-white py-4 px-0 shadow ">
       <div className="px-2 md:px-4 mx-auto flex items-center justify-between">
         <Button variant="ghost" size="icon" className="sm:hidden">
           <MenuIcon className="h-6 w-6" />
