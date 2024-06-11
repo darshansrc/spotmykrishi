@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="bg-[#F5F5F5] py-12 px-6">
+    <section className="bg-[#F5F5F5] py-12 px-0">
       <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="flex flex-col items-start justify-center">
           <h1 className="text-3xl font-bold text-[#4CAF50] md:text-4xl">

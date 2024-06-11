@@ -18,7 +18,7 @@ import {
 export default function Landing() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <section className="bg-white py-12 px-6">
+      <section className="bg-white py-12 px-0">
         <div className="container mx-auto">
           <h2 className="text-center text-3xl font-bold text-[#4CAF50]">
             Why Choose Spotmykrishi?
@@ -55,7 +55,7 @@ export default function Landing() {
         </div>
       </section>
       <section className="bg-[#F5F5F5] py-12 px-6">
-        <div className="container mx-auto">
+        <div className=" mx-auto">
           <h2 className="text-center text-3xl font-bold text-[#4CAF50]">
             Our Products
           </h2>
@@ -263,7 +263,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <footer className="bg-[#F5F5F5] py-8 px-6">
+      <footer className="bg-[#F5F5F5] py-8 px-0">
         <div className="container mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div>
             <h3 className="text-xl font-bold text-[#4CAF50]">About</h3>

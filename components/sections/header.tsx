@@ -5,8 +5,8 @@ import { Button } from "../ui/button";
 
 const Header = () => {
   return (
-    <header className="bg-white py-4 px-6 shadow">
-      <div className="container mx-auto flex items-center justify-between">
+    <header className="bg-white py-4 px-0 shadow">
+      <div className="px-4 mx-auto flex items-center justify-between">
         <Link href="#" className="flex items-center" prefetch={false}>
           <LeafIcon className="h-8 w-8 text-[#4CAF50]" />
           <span className="ml-2 text-xl font-bold text-[#4CAF50]">
