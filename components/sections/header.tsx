@@ -11,8 +11,8 @@ const Header = () => {
           <MenuIcon className="h-6 w-6" />
         </Button>
         <Link href="#" className="flex items-center" prefetch={false}>
-          <LeafIcon className="h-8 w-8 text-[#4CAF50]" />
-          <span className="ml-2 text-xl font-bold text-[#4CAF50]">
+          <LeafIcon className="h-8 w-8 text-green-800" />
+          <span className="ml-2 text-xl font-bold text-green-800">
             Spotmykrishi
           </span>
         </Link>
@@ -21,7 +21,7 @@ const Header = () => {
             <Input
               type="text"
               placeholder="Search products..."
-              className="w-full rounded-md border border-gray-300 py-2 pl-4 pr-10 focus:border-[#4CAF50] focus:outline-none"
+              className="w-full rounded-md border border-gray-300 py-2 pl-4 pr-10 focus:border-green-800 focus:outline-none"
             />
             <Button
               variant="ghost"
@@ -44,7 +44,7 @@ const Header = () => {
         <Input
           type="text"
           placeholder="Search products..."
-          className="w-full rounded-md border border-gray-300 py-2 pl-4 pr-10 focus:border-[#4CAF50] focus:outline-none"
+          className="w-full rounded-md border border-gray-300 py-2 pl-4 pr-10 focus:border-green-800 focus:outline-none"
         />
         <Button
           variant="ghost"

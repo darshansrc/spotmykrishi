@@ -20,13 +20,13 @@ export default function Landing() {
     <div className="flex flex-col min-h-[100dvh]">
       <section className="bg-white py-12 px-0">
         <div className="container mx-auto">
-          <h2 className="text-center text-3xl font-bold text-[#4CAF50]">
+          <h2 className="text-center text-3xl font-bold text-green-800">
             Why Choose Spotmykrishi?
           </h2>
           <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col items-center">
-              <TruckIcon className="h-12 w-12 text-[#4CAF50]" />
-              <h3 className="mt-4 text-xl font-bold text-[#4CAF50]">
+              <TruckIcon className="h-12 w-12 text-green-800" />
+              <h3 className="mt-4 text-xl font-bold text-green-800">
                 Fast Delivery
               </h3>
               <p className="mt-2 text-center text-gray-700">
@@ -34,8 +34,8 @@ export default function Landing() {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <LeafIcon className="h-12 w-12 text-[#4CAF50]" />
-              <h3 className="mt-4 text-xl font-bold text-[#4CAF50]">
+              <LeafIcon className="h-12 w-12 text-green-800" />
+              <h3 className="mt-4 text-xl font-bold text-green-800">
                 High-Quality Products
               </h3>
               <p className="mt-2 text-center text-gray-700">
@@ -43,8 +43,8 @@ export default function Landing() {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <UsersIcon className="h-12 w-12 text-[#4CAF50]" />
-              <h3 className="mt-4 text-xl font-bold text-[#4CAF50]">
+              <UsersIcon className="h-12 w-12 text-green-800" />
+              <h3 className="mt-4 text-xl font-bold text-green-800">
                 Expert Assistance
               </h3>
               <p className="mt-2 text-center text-gray-700">
@@ -56,7 +56,7 @@ export default function Landing() {
       </section>
       <section className="bg-[#F5F5F5] py-12 px-6">
         <div className=" mx-auto">
-          <h2 className="text-center text-3xl font-bold text-[#4CAF50]">
+          <h2 className="text-center text-3xl font-bold text-green-800">
             Our Products
           </h2>
           <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -69,17 +69,17 @@ export default function Landing() {
                 className="rounded-t-lg object-cover"
               />
               <CardContent className="p-4">
-                <h3 className="text-xl font-bold text-[#4CAF50]">
+                <h3 className="text-xl font-bold text-green-800">
                   Organic Fertilizer
                 </h3>
                 <p className="mt-2 text-gray-700">
                   Enrich your soil with our premium organic fertilizer.
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-lg font-bold text-[#4CAF50]">
+                  <span className="text-lg font-bold text-green-800">
                     $29.99
                   </span>
-                  <Button className="bg-[#4CAF50] text-white hover:bg-[#43a047]">
+                  <Button className="bg-green-800 text-white hover:bg-[#43a047]">
                     Add to Cart
                   </Button>
                 </div>
@@ -94,17 +94,17 @@ export default function Landing() {
                 className="rounded-t-lg object-cover"
               />
               <CardContent className="p-4">
-                <h3 className="text-xl font-bold text-[#4CAF50]">
+                <h3 className="text-xl font-bold text-green-800">
                   Vegetable Seeds
                 </h3>
                 <p className="mt-2 text-gray-700">
                   Grow your own fresh vegetables with our high-quality seeds.
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-lg font-bold text-[#4CAF50]">
+                  <span className="text-lg font-bold text-green-800">
                     $9.99
                   </span>
-                  <Button className="bg-[#4CAF50] text-white hover:bg-[#43a047]">
+                  <Button className="bg-green-800 text-white hover:bg-[#43a047]">
                     Add to Cart
                   </Button>
                 </div>
@@ -119,17 +119,17 @@ export default function Landing() {
                 className="rounded-t-lg object-cover"
               />
               <CardContent className="p-4">
-                <h3 className="text-xl font-bold text-[#4CAF50]">
+                <h3 className="text-xl font-bold text-green-800">
                   Garden Tools
                 </h3>
                 <p className="mt-2 text-gray-700">
                   Equip your garden with our high-quality gardening tools.
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-lg font-bold text-[#4CAF50]">
+                  <span className="text-lg font-bold text-green-800">
                     $49.99
                   </span>
-                  <Button className="bg-[#4CAF50] text-white hover:bg-[#43a047]">
+                  <Button className="bg-green-800 text-white hover:bg-[#43a047]">
                     Add to Cart
                   </Button>
                 </div>
@@ -140,7 +140,7 @@ export default function Landing() {
       </section>
       <section className="bg-white py-12 px-6">
         <div className="container mx-auto">
-          <h2 className="text-center text-3xl font-bold text-[#4CAF50]">
+          <h2 className="text-center text-3xl font-bold text-green-800">
             Discounted Products
           </h2>
           <Carousel
@@ -161,20 +161,20 @@ export default function Landing() {
                     className="rounded-t-lg object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="text-xl font-bold text-[#4CAF50]">
+                    <h3 className="text-xl font-bold text-green-800">
                       Organic Potting Soil
                     </h3>
                     <p className="mt-2 text-gray-700">
                       Nourish your plants with our premium organic potting soil.
                     </p>
                     <div className="mt-4 flex items-center justify-between">
-                      <span className="text-lg font-bold text-[#4CAF50]">
+                      <span className="text-lg font-bold text-green-800">
                         $19.99
                         <span className="ml-2 text-sm font-normal line-through text-gray-500">
                           $24.99
                         </span>
                       </span>
-                      <Button className="bg-[#4CAF50] text-white hover:bg-[#43a047]">
+                      <Button className="bg-green-800 text-white hover:bg-[#43a047]">
                         Add to Cart
                       </Button>
                     </div>
@@ -191,7 +191,7 @@ export default function Landing() {
                     className="rounded-t-lg object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="text-xl font-bold text-[#4CAF50]">
+                    <h3 className="text-xl font-bold text-green-800">
                       Gardening Gloves
                     </h3>
                     <p className="mt-2 text-gray-700">
@@ -199,13 +199,13 @@ export default function Landing() {
                       gloves.
                     </p>
                     <div className="mt-4 flex items-center justify-between">
-                      <span className="text-lg font-bold text-[#4CAF50]">
+                      <span className="text-lg font-bold text-green-800">
                         $7.99
                         <span className="ml-2 text-sm font-normal line-through text-gray-500">
                           $9.99
                         </span>
                       </span>
-                      <Button className="bg-[#4CAF50] text-white hover:bg-[#43a047]">
+                      <Button className="bg-green-800 text-white hover:bg-[#43a047]">
                         Add to Cart
                       </Button>
                     </div>
@@ -222,7 +222,7 @@ export default function Landing() {
                     className="rounded-t-lg object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="text-xl font-bold text-[#4CAF50]">
+                    <h3 className="text-xl font-bold text-green-800">
                       Watering Can
                     </h3>
                     <p className="mt-2 text-gray-700">
@@ -230,13 +230,13 @@ export default function Landing() {
                       watering can.
                     </p>
                     <div className="mt-4 flex items-center justify-between">
-                      <span className="text-lg font-bold text-[#4CAF50]">
+                      <span className="text-lg font-bold text-green-800">
                         $12.99
                         <span className="ml-2 text-sm font-normal line-through text-gray-500">
                           $14.99
                         </span>
                       </span>
-                      <Button className="bg-[#4CAF50] text-white hover:bg-[#43a047]">
+                      <Button className="bg-green-800 text-white hover:bg-[#43a047]">
                         Add to Cart
                       </Button>
                     </div>
@@ -249,7 +249,7 @@ export default function Landing() {
           </Carousel>
         </div>
       </section>
-      <section className="bg-[#4CAF50] py-12 px-6 text-white">
+      <section className="bg-green-800 py-12 px-6 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold">Ready to Grow Your Garden?</h2>
           <p className="mt-4 text-lg">
@@ -257,7 +257,7 @@ export default function Landing() {
             transform your outdoor space.
           </p>
           <div className="mt-6">
-            <Button className="bg-white text-[#4CAF50] hover:bg-gray-200">
+            <Button className="bg-white text-green-800 hover:bg-gray-200">
               Shop Now
             </Button>
           </div>
@@ -266,12 +266,12 @@ export default function Landing() {
       <footer className="bg-[#F5F5F5] py-8 px-0">
         <div className="container mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div>
-            <h3 className="text-xl font-bold text-[#4CAF50]">About</h3>
+            <h3 className="text-xl font-bold text-green-800">About</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <Link
                   href="#"
-                  className="text-gray-700 hover:text-[#4CAF50]"
+                  className="text-gray-700 hover:text-green-800"
                   prefetch={false}
                 >
                   Our Story
@@ -280,7 +280,7 @@ export default function Landing() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-700 hover:text-[#4CAF50]"
+                  className="text-gray-700 hover:text-green-800"
                   prefetch={false}
                 >
                   Mission & Values
@@ -289,7 +289,7 @@ export default function Landing() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-700 hover:text-[#4CAF50]"
+                  className="text-gray-700 hover:text-green-800"
                   prefetch={false}
                 >
                   Team
@@ -298,12 +298,12 @@ export default function Landing() {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-[#4CAF50]">Products</h3>
+            <h3 className="text-xl font-bold text-green-800">Products</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <Link
                   href="#"
-                  className="text-gray-700 hover:text-[#4CAF50]"
+                  className="text-gray-700 hover:text-green-800"
                   prefetch={false}
                 >
                   Plants
@@ -312,7 +312,7 @@ export default function Landing() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-700 hover:text-[#4CAF50]"
+                  className="text-gray-700 hover:text-green-800"
                   prefetch={false}
                 >
                   Seeds
@@ -321,7 +321,7 @@ export default function Landing() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-700 hover:text-[#4CAF50]"
+                  className="text-gray-700 hover:text-green-800"
                   prefetch={false}
                 >
                   Fertilizers
@@ -330,7 +330,7 @@ export default function Landing() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-700 hover:text-[#4CAF50]"
+                  className="text-gray-700 hover:text-green-800"
                   prefetch={false}
                 >
                   Gardening Tools
@@ -339,7 +339,7 @@ export default function Landing() {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-[#4CAF50]">Services</h3>
+            <h3 className="text-xl font-bold text-green-800">Services</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <Link

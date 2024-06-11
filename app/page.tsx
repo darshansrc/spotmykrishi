@@ -2,6 +2,7 @@ import Banner from "@/components/sections/banner";
 import Header from "@/components/sections/header";
 import Hero from "@/components/sections/hero";
 import Landing from "@/components/sections/landing";
+import Products from "@/components/sections/products";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Banner />
       <Header />
       <Hero />
+
       <Landing />
     </main>
   );
