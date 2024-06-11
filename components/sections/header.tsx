@@ -1,45 +1,88 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import useMediaQuery from "@/hooks/use-media-query-type";
 
 const Header = () => {
-  return (
-    <header className="bg-white py-4 px-0 shadow">
-      <div className="px-4 mx-auto flex items-center justify-between">
-        <Link href="#" className="flex items-center" prefetch={false}>
-          <LeafIcon className="h-8 w-8 text-[#4CAF50]" />
-          <span className="ml-2 text-xl font-bold text-[#4CAF50]">
-            Spotmykrishi
-          </span>
-        </Link>
-        <div className="flex items-center gap-4">
-          <div className="relative w-full">
-            <Input
-              type="text"
-              placeholder="Search products..."
-              className="w-full rounded-md border border-gray-300 py-2 pl-4 pr-10 focus:border-[#4CAF50] focus:outline-none"
-            />
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute right-2 top-1/2 -translate-y-1/2"
-            >
-              <SearchIcon className="h-5 w-5 text-gray-500" />
+  const { device } = useMediaQuery();
+
+  if (device == "tablet" || device == "desktop") {
+    return (
+      <header className="bg-white py-4 px-0 shadow">
+        <div className="px-4 mx-auto flex items-center justify-between">
+          <Link href="#" className="flex items-center" prefetch={false}>
+            <LeafIcon className="h-8 w-8 text-[#4CAF50]" />
+            <span className="ml-2 text-xl font-bold text-[#4CAF50]">
+              Spotmykrishi
+            </span>
+          </Link>
+          <div className="flex items-center gap-4">
+            <div className="relative w-full">
+              <Input
+                type="text"
+                placeholder="Search products..."
+                className="w-full rounded-md border border-gray-300 py-2 pl-4 pr-10 focus:border-[#4CAF50] focus:outline-none"
+              />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute right-2 top-1/2 -translate-y-1/2"
+              >
+                <SearchIcon className="h-5 w-5 text-gray-500" />
+              </Button>
+            </div>
+
+            <Button variant="outline" className="hidden sm:flex">
+              <ShoppingCartIcon className="h-5 w-5 mr-2" />
+              Cart
+            </Button>
+            <Button variant="ghost" size="icon" className="sm:hidden">
+              <MenuIcon className="h-6 w-6" />
             </Button>
           </div>
+        </div>
+      </header>
+    );
+  }
 
-          <Button variant="outline" className="hidden sm:flex">
-            <ShoppingCartIcon className="h-5 w-5 mr-2" />
-            Cart
-          </Button>
+  if (device == "mobile") {
+    return (
+      <header className="bg-white py-4 px-0 shadow">
+        <div className="px-4 mx-auto flex items-center justify-between">
           <Button variant="ghost" size="icon" className="sm:hidden">
             <MenuIcon className="h-6 w-6" />
           </Button>
+          <Link href="#" className="flex items-center" prefetch={false}>
+            <LeafIcon className="h-8 w-8 text-[#4CAF50]" />
+            <span className="ml-2 text-xl font-bold text-[#4CAF50]">
+              Spotmykrishi
+            </span>
+          </Link>
+          <div className="flex items-center gap-4">
+            <Button variant="ghost" size="icon" className="">
+              <ShoppingCartIcon className="h-5 w-5" />
+            </Button>
+          </div>
         </div>
-      </div>
-    </header>
-  );
+        <div className="relative w-full px-4 mt-4">
+          <Input
+            type="text"
+            placeholder="Search products..."
+            className="w-full rounded-md border border-gray-300 py-2 pl-4 pr-10 focus:border-[#4CAF50] focus:outline-none"
+          />
+          <Button
+            variant="ghost"
+            size="icon"
+            className="absolute right-4 top-1/2 -translate-y-1/2"
+          >
+            <SearchIcon className="h-5 w-5 text-gray-500" />
+          </Button>
+        </div>
+      </header>
+    );
+  }
 };
 
 export default Header;
