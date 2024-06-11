@@ -3,12 +3,15 @@ import React from "react";
 const Products = () => {
   return (
     <section className="bg-white py-12 px-0">
-      <div className="container mx-auto grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+      <h2 className="text-center text-3xl  pb-10  md:pt-6 md:pb-16 font-bold text-green-800">
+        Our Services
+      </h2>
+      <div className="container mx-auto max-w-4xl grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
         <div className="flex flex-col items-center">
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <TreesIcon className=" h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
             Plants
           </p>
         </div>
@@ -16,7 +19,7 @@ const Products = () => {
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <SproutIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
             Seeds
           </p>
         </div>
@@ -24,7 +27,7 @@ const Products = () => {
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <FlowerIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
             Gardening
           </p>
         </div>
@@ -32,7 +35,7 @@ const Products = () => {
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <FuelIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
             Fertilizers
           </p>
         </div>
@@ -40,23 +43,23 @@ const Products = () => {
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <UsersIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
-            Contract Labours
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
+            Contract <br /> Labours
           </p>
         </div>
         <div className="flex flex-col items-center">
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <PenToolIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
-            Agricultural Equipments
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
+            Agricultural <br /> Equipments
           </p>
         </div>
         <div className="flex flex-col items-center">
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <FenceIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
             Fencing
           </p>
         </div>
@@ -64,7 +67,7 @@ const Products = () => {
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <GlassWaterIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
             Borewells
           </p>
         </div>
@@ -72,24 +75,17 @@ const Products = () => {
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <PackageIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
-            Plantation Packages
+          <p className=" mt-1 md:mt-2 text-[12px] md:text-sm text-muted-foreground font-medium">
+            Plantation <br /> Packages
           </p>
         </div>
         <div className="flex flex-col items-center">
           <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
             <GlassWaterIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
           </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
-            Water Treatment
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="bg-green-800 rounded-full w-16 h-16 md:w-16 md:h-16 flex items-center justify-center">
-            <CctvIcon className="h-4 w-4 md:h-8 md:w-8 text-white" />
-          </div>
-          <p className=" mt-1 md:mt-2 text-[10px] md:text-sm text-muted-foreground font-medium">
-            CCTV / Security
+          <p className=" mt-1 md:mt-2 text-center text-[12px] md:text-sm text-muted-foreground font-medium">
+            Water
+            <br /> Treatment
           </p>
         </div>
       </div>
