@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Spotmykrishi",
@@ -48,6 +46,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Toaster />
             {children}
           </ThemeProvider>
         </body>
