@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://spotmykrishi.vercel.app/",
+    url: "https://spotmykrishi.in/",
     title: "Spotmykrishi",
     description:
       "Discover a wide range of high-quality agricultural products and services to help you cultivate your dream garden.",
