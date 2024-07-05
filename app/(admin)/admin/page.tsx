@@ -53,7 +53,7 @@ export default async function Page() {
                 <Badge variant="outline">{product.product_category}</Badge>
               </TableCell>
               <TableCell>{product.product_description}</TableCell>
-              <TableCell>{product.product_price}</TableCell>
+              <TableCell>₹{product.product_price}</TableCell>
             </TableRow>
           ))}
         </TableBody>

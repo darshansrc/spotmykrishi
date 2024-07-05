@@ -140,7 +140,7 @@ export function AddNewProduct() {
           Add New Product
         </Button>
       </DialogTrigger>
-      <DialogContent className="min-w-[800px]">
+      <DialogContent>
         <form onSubmit={handleSubmit}>
           <DialogHeader>
             <DialogTitle>Add New Product</DialogTitle>
@@ -157,6 +157,7 @@ export function AddNewProduct() {
                 placeholder="Enter product name here..."
                 value={formData.product_name}
                 onChange={handleChange}
+                autoComplete="off"
               />
               {errors.product_name && (
                 <Text className="text-destructive">{errors.product_name}</Text>
@@ -261,6 +262,25 @@ export function AddNewProduct() {
             </div>
           </div>
           <DialogFooter>
+            <Button
+              variant="outline"
+              className="rounded-lg py-1"
+              disabled={loading}
+              onClick={() => {
+                setOpen(false);
+                setFormData({
+                  product_name: "",
+                  product_description: "",
+                  product_price: "",
+                  product_category: "",
+                  product_images: [],
+                });
+                setErrors({});
+              }}
+            >
+              Cancel
+            </Button>
+
             <Button
               type="submit"
               className="bg-green-700 hover:bg-green-800 rounded-lg py-1"
