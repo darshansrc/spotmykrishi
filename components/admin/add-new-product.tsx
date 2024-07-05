@@ -141,7 +141,10 @@ export function AddNewProduct() {
         </Button>
       </DialogTrigger>
       <DialogContent>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={handleSubmit}
+          className="overflow-y-auto px-2 max-h-[80vh]"
+        >
           <DialogHeader>
             <DialogTitle>Add New Product</DialogTitle>
             <DialogDescription>
@@ -238,16 +241,13 @@ export function AddNewProduct() {
                 onChange={handleImageChange}
                 className="mb-2"
               />
-              <div className="flex gap-2 overflow-x-auto">
+              <div className="grid grid-cols-2 gap-2  overflow-x-auto">
                 {formData.product_images.map((image, index) => (
                   <div key={index} className="relative">
                     <img
                       src={URL.createObjectURL(image)}
                       alt={`Product image ${index + 1}`}
-                      className="h-40 w-40 object-cover cursor-pointer rounded-lg border"
-                      onClick={() => {
-                        // Handle image click if needed
-                      }}
+                      className=" w-full h-48 p-2 object-cover cursor-pointer rounded-lg border"
                     />
                     <button
                       type="button"
