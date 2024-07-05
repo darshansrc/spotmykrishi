@@ -26,6 +26,9 @@ import { addProduct } from "@/actions/supabase";
 import { IconSpinner } from "./submit-form";
 import toast from "react-hot-toast";
 import { Cross, CrossIcon, X } from "lucide-react";
+import { createClient } from "@/utils/supabase/client";
+import { cookies } from "next/headers";
+import { nanoid } from "nanoid";
 
 export interface NewProductFormData {
   product_name: string;
@@ -76,16 +79,43 @@ export function AddNewProduct() {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const newErrors = validate();
+
+    const supabase = createClient();
+
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
       setLoading(true);
-      console.log(formData);
-      const { error } = await addProduct(formData);
+
+      const timestamp = Date.now();
+      const data = {
+        ...formData,
+        product_images: formData.product_images.map(
+          (image) => `${image.name}-${timestamp}`
+        ),
+      };
+
+      for (const image of data.product_images) {
+        const { error } = await supabase.storage
+          .from("product_images")
+          .upload(
+            image,
+            formData.product_images.find(
+              (img) => `${img.name}-${timestamp}` === image
+            )!
+          );
+        if (error) {
+          // @ts-ignore
+          toast.error("Error uploading image", error.message);
+        }
+      }
+
+      const { error } = await supabase.from("products").insert(data);
       if (error) {
         toast.error(error.message);
       } else {
         toast.success("Product added successfully");
+        addProduct();
         setOpen(false);
         setFormData({
           product_name: "",

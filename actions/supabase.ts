@@ -44,19 +44,23 @@ export async function getProducts() {
   return { products, error };
 }
 
-export async function addProduct(formData: NewProductFormData) {
+export async function deleteProduct(productId: string) {
   const cookieStore = cookies();
   const supabase = createClient(cookieStore);
 
-  const data = {
-    product_name: formData.product_name,
-    product_description: formData.product_description,
-    product_price: formData.product_price,
-    product_category: formData.product_category,
-  };
+  const { error } = await supabase
+    .from("products")
+    .delete()
+    .eq("product_id", productId);
 
-  const { error } = await supabase.from("products").insert(data);
+  console.error("Error deleting product", error);
+
   revalidatePath("/admin", "layout");
 
   return { error };
+}
+
+export async function addProduct() {
+  revalidatePath("/admin", "layout");
+  return;
 }

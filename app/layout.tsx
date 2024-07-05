@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     siteName: "Spotmykrishi",
     images: [
       {
-        url: "https://spotmykrishi.vercel.app/assets/hero.jpg",
+        url: "https://spotmykrishi.in/assets/hero.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://spotmykrishi.vercel.app/assets/hero.jpg",
+        url: "https://spotmykrishi.in/assets/hero.jpg",
         width: 1800,
         height: 1600,
       },

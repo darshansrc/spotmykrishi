@@ -7,11 +7,11 @@ export default function AdminDashboardLayout({
 }) {
   return (
     <section className="flex flex-row">
-      <nav className="w-[280px] h-screen ">
+      <nav className="w-[250px] h-screen fixed left-0 top-0 hidden md:block ">
         <AdminSidebar />
       </nav>
 
-      {children}
+      <div className="md:pl-[250px]">{children}</div>
     </section>
   );
 }
