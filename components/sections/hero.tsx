@@ -1,8 +1,16 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { ShoppingCart } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
+  const whatsappLink = () => {
+    const message = encodeURIComponent(
+      `I'm interested in buying your plantation products. Can you provide more information?`
+    );
+    return `https://wa.me/+917022472627?text=${message}`;
+  };
+
   return (
     <section className="bg-[#F5F5F5] py-12 px-0">
       <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -15,15 +23,19 @@ const Hero = () => {
             services to help you cultivate your dream garden.
           </p>
           <div className="mt-6 flex gap-4">
-            <Button className="bg-green-800 text-white hover:bg-[#43a047]">
-              <ShoppingCart className="size-4 mr-2" /> Shop Now
-            </Button>
-            <Button
-              variant="outline"
-              className="text-green-800 hover:bg-[#F5F5F5]"
-            >
-              <WhatsappIcon className="size-5 mr-2" /> Whatsapp
-            </Button>
+            <Link href={whatsappLink()}>
+              <Button className="bg-green-800 text-white hover:bg-[#43a047]">
+                <ShoppingCart className="size-4 mr-2" /> Shop Now
+              </Button>
+            </Link>
+            <Link href={whatsappLink()}>
+              <Button
+                variant="outline"
+                className="text-green-800 hover:bg-[#F5F5F5]"
+              >
+                <WhatsappIcon className="size-5 mr-2" /> Whatsapp
+              </Button>
+            </Link>
           </div>
         </div>
         <div>

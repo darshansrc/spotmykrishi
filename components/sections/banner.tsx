@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="bg-green-800 py-2 px-1 text-white">
       <p className="text-center text-sm font-medium">
-        Get 20% off on all products. Use code SPOTMYKRISHI20 at checkout.
+        Contact us at +91 70224 72627 for bulk orders | Free Shipping on orders
       </p>
     </div>
   );
